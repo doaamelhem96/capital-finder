@@ -31,7 +31,7 @@ class handler(BaseHTTPRequestHandler):
             for country_data in data:
                 if country == country_data.get("name").get("common"):
                     capital = country_data.get("capital")[0]
-                    message = f" {capital} is The capital of {country}  "
+                    message = f"{capital}is the capital of{country}  "
                     break
         else:
             message = "Give me a valid country please"
